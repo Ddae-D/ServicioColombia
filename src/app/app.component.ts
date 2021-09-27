@@ -5,6 +5,10 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+//Direccion de servicio: https://www.datos.gov.co/resource/xdk5-pm3f.json
+
 export class AppComponent {
-  title = 'ConsumerServiceWeb';
 }
+
+
+

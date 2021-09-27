@@ -1,0 +1,58 @@
+<h2>Componente hijo, desde aqui consumimos el servicio</h2>
+<div class="container">
+    <div class="row text-white text-center" style="background-color: red">
+        <div class="col-3 ">
+            Region
+        </div>
+        <div class="col-3 ">
+            Codigo 
+        </div>
+        <div class="col-3 ">
+            Departamento
+        </div>
+        <div class="col-3 ">
+            Municipio
+        </div>
+    </div>
+    <div class="row text-center" *ngFor="let item of respuestaService; let i=index">
+        <div class="col-3 ">
+            {{item["region"]}}
+        </div>
+        <div class="col-3 ">
+            {{item["c_digo_dane_del_departamento"]}}
+        </div>
+        <div class="col-3 ">
+            {{item["departamento"]}}
+        </div>
+        <div class="col-3 ">
+            {{item["c_digo_dane_del_municipio"]}}
+        </div>
+    </div>
+</div>
+<!-- 
+<table class="table table-dark" *ngFor="let item of respuestaService; let i=index">
+    <thead>
+      <tr>
+        <th scope="col">
+           #
+        </th>
+        <th>Region</th>
+        <th>Codigo</th>
+        <th>Departamento</th>
+        <th>Municipio</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{i+1}}</th>
+        <td>{{item["region"]}}</td>
+        <td>{{item["c_digo_dane_del_departamento"]}}</td>
+        <td>{{item["departamento"]}}</td>
+        <td>{{item["c_digo_dane_del_municipio"]}}</td>
+    </tr>
+      </tbody>
+</table> --> -->
+<!--  -->
+<!-- <select *ngFor="let item of respuestaService">
+    <option>{{item}} </option>
+</select> --> -->
